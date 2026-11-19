@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EasySales — простая CRM для малого бизнеса</title>
+  <meta name="description" content="EasySales — простая система учёта продаж и CRM для малого бизнеса. Клиенты, заказы, склад и отчёты в одном месте." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="EasySales home">
+        <span class="brand-mark">E</span>
+        <span class="brand-name">EasySales</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features" data-i18n="nav.features">Возможности</a>
+        <a href="#about" data-i18n="nav.about">О продукте</a>
+        <a href="#contact" data-i18n="nav.contact">Контакты</a>
+        <a href="#privacy" class="nav-privacy" data-i18n="nav.privacy">Политика конфиденциальности</a>
+      </nav>
+
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" class="lang-btn" data-lang="et" aria-pressed="false">ET</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">CRM для малого бизнеса</p>
+          <h1 data-i18n="hero.title">Продажи проще. Бизнес понятнее.</h1>
+          <p class="lead" data-i18n="hero.lead">EasySales помогает вести клиентов, заказы и склад в одном окне. Без сложных настроек и долгого внедрения — начинайте работать в день установки.</p>
+          <div class="cta-row">
+            <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaPrimary">Попробовать</a>
+            <a href="#features" class="btn btn-ghost" data-i18n="hero.ctaSecondary">Узнать больше</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="card-float card-float-1">
+            <div class="kpi">
+              <span class="kpi-label" data-i18n="hero.kpi1label">Сегодня заказов</span>
+              <span class="kpi-value">42</span>
+              <span class="kpi-delta up" data-i18n="hero.kpi1delta">+18% к вчера</span>
+            </div>
+          </div>
+          <div class="card-float card-float-2">
+            <div class="bar" style="--v:30%"></div>
+            <div class="bar" style="--v:60%"></div>
+            <div class="bar" style="--v:45%"></div>
+            <div class="bar" style="--v:80%"></div>
+            <div class="bar" style="--v:55%"></div>
+            <div class="bar" style="--v:90%"></div>
+            <div class="bar" style="--v:70%"></div>
+          </div>
+          <div class="card-float card-float-3">
+            <span class="dot ok"></span>
+            <span data-i18n="hero.sync">Синхронизация в реальном времени</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2 data-i18n="features.title">Всё, что нужно для продаж</h2>
+          <p data-i18n="features.sub">Ничего лишнего — только инструменты, которые реально используете каждый день.</p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature">
+            <div class="feature-icon">👥</div>
+            <h3 data-i18n="features.f1t">База клиентов</h3>
+            <p data-i18n="features.f1d">Контакты, история покупок, сегменты и напоминания о звонках в единой карточке.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">🧾</div>
+            <h3 data-i18n="features.f2t">Заказы и счета</h3>
+            <p data-i18n="features.f2d">Создание заказов в пару кликов, статусы, печать чеков и счетов-фактур.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">📦</div>
+            <h3 data-i18n="features.f3t">Складской учёт</h3>
+            <p data-i18n="features.f3d">Остатки, приходы/расходы, инвентаризация и оповещения о низких запасах.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">📊</div>
+            <h3 data-i18n="features.f4t">Отчёты</h3>
+            <p data-i18n="features.f4d">Выручка, прибыль, топ товаров и активность менеджеров — в наглядных дашбордах.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">📱</div>
+            <h3 data-i18n="features.f5t">Мобильность</h3>
+            <p data-i18n="features.f5d">Работает на Windows, Android, iOS и в браузере (Blazor + MAUI Hybrid).</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">🔌</div>
+            <h3 data-i18n="features.f6t">Интеграции</h3>
+            <p data-i18n="features.f6d">Подключайте онлайн-кассы, банки, маркетплейсы и сервисы доставки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div>
+          <h2 data-i18n="about.title">Сделан для практичных</h2>
+          <p data-i18n="about.p1">EasySales создаётся в Эстонии небольшой командой, которая понимает, что малому бизнесу не нужны корпоративные монстры с внедрением на месяцы.</p>
+          <p data-i18n="about.p2">Мы делаем продукт, в котором каждая кнопка — на своём месте. Настраивайте под себя, растите и не тратьте часы на обучение сотрудников.</p>
+          <ul class="bullets">
+            <li data-i18n="about.b1">Быстрый старт — без внедренцев и консультантов</li>
+            <li data-i18n="about.b2">Понятный интерфейс для продавцов и владельцев</li>
+            <li data-i18n="about.b3">Честная цена без скрытых платежей</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <div class="about-stat">
+            <strong>2019</strong>
+            <span data-i18n="about.s1">На рынке с</span>
+          </div>
+          <div class="about-stat">
+            <strong>500+</strong>
+            <span data-i18n="about.s2">Активных клиентов</span>
+          </div>
+          <div class="about-stat">
+            <strong>24/7</strong>
+            <span data-i18n="about.s3">Поддержка</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2 data-i18n="contact.title">Свяжитесь с нами</h2>
+          <p data-i18n="contact.sub">Расскажите о своём бизнесе — подскажем, подойдёт ли EasySales и поможем с первым запуском.</p>
+          <ul class="contact-list">
+            <li><span data-i18n="contact.email">Email:</span> <a href="mailto:info@easysales.ee">info@easysales.ee</a></li>
+            <li><span data-i18n="contact.phone">Телефон:</span> <a href="tel:+3720000000">+372 000 0000</a></li>
+            <li><span data-i18n="contact.addr">Адрес:</span> Tallinn, Estonia</li>
+          </ul>
+        </div>
+        <form class="contact-form" onsubmit="return false;" novalidate>
+          <label>
+            <span data-i18n="form.name">Имя</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span data-i18n="form.email">Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span data-i18n="form.msg">Сообщение</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary" data-i18n="form.send">Отправить</button>
+          <p class="form-note" data-i18n="form.note">Нажимая кнопку, вы соглашаетесь с Политикой конфиденциальности.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- PRIVACY POLICY -->
+    <section id="privacy" class="section alt">
+      <div class="container narrow">
+        <header class="section-head">
+          <h2 data-i18n="privacy.title">Политика конфиденциальности</h2>
+          <p data-i18n="privacy.updated">Последнее обновление: 19 ноября 2026 г.</p>
+        </header>
+
+        <article class="legal">
+          <h3 data-i18n="privacy.h1">1. Общие положения</h3>
+          <p data-i18n="privacy.p1">Настоящая Политика конфиденциальности описывает, как EasySales (далее — «мы», «нас», «сервис») собирает, использует и защищает информацию пользователей сайта и программного обеспечения. Используя сервис, вы соглашаетесь с условиями этой Политики.</p>
+
+          <h3 data-i18n="privacy.h2">2. Какую информацию мы собираем</h3>
+          <p data-i18n="privacy.p2">Мы можем собирать: имя и контактные данные (email, телефон), которые вы предоставляете через формы обратной связи; информацию об устройстве и браузере (IP-адрес, тип ОС, версия приложения) для диагностики и улучшения сервиса; данные, которые вы вносите в систему при работе с клиентами, заказами и складом (хранятся на ваших серверах либо в выбранном вами облаке).</p>
+
+          <h3 data-i18n="privacy.h3">3. Как мы используем информацию</h3>
+          <p data-i18n="privacy.p3">Информация используется исключительно для: предоставления и поддержки сервиса; ответа на ваши запросы; отправки важных уведомлений (обновления, счета, безопасность); улучшения качества продукта на основе обезличенной аналитики.</p>
+
+          <h3 data-i18n="privacy.h4">4. Cookies и аналитика</h3>
+          <p data-i18n="privacy.p4">Сайт может использовать cookies для запоминания языка и базовых настроек. Мы не продаём и не передаём ваши данные третьим лицам в рекламных целях. Вы можете отключить cookies в настройках браузера.</p>
+
+          <h3 data-i18n="privacy.h5">5. Раскрытие третьим лицам</h3>
+          <p data-i18n="privacy.p5">Мы не передаём персональные данные третьим лицам, за исключением случаев: когда это требуется по закону; когда привлекаются подрядчики (хостинг, платёжные провайдеры), связанные обязательствами о неразглашении; когда вы явно дали на это согласие.</p>
+
+          <h3 data-i18n="privacy.h6">6. Безопасность</h3>
+          <p data-i18n="privacy.p6">Мы применяем разумные организационные и технические меры для защиты данных (шифрование HTTPS, доступ по ролям, регулярные обновления). Однако ни один способ передачи данных через Интернет не является абсолютно безопасным.</p>
+
+          <h3 data-i18n="privacy.h7">7. Ваши права</h3>
+          <p data-i18n="privacy.p7">Вы имеете право запросить доступ, исправление или удаление ваших персональных данных, а также ограничить их обработку. Для этого напишите нам на info@easysales.ee.</p>
+
+          <h3 data-i18n="privacy.h8">8. Дети</h3>
+          <p data-i18n="privacy.p8">Сервис не предназначен для лиц младше 13 лет, и мы сознательно не собираем данные детей без согласия родителей.</p>
+
+          <h3 data-i18n="privacy.h9">9. Изменения в Политике</h3>
+          <p data-i18n="privacy.p9">Мы можем обновлять эту Политику. Актуальная версия всегда доступна на этой странице. Продолжая использовать сервис после обновлений, вы принимаете новые условия.</p>
+
+          <h3 data-i18n="privacy.h10">10. Контакты</h3>
+          <p data-i18n="privacy.p10">По всем вопросам, связанным с конфиденциальностью, пишите на info@easysales.ee, Tallinn, Estonia.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <span class="brand-mark">E</span>
+          <span class="brand-name">EasySales</span>
+        </div>
+        <p class="muted" data-i18n="footer.tag">Простая CRM для малого бизнеса. Сделано в Эстонии.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.nav">Навигация</h4>
+        <ul class="foot-links">
+          <li><a href="#features" data-i18n="nav.features">Возможности</a></li>
+          <li><a href="#about" data-i18n="nav.about">О продукте</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.legal">Правовое</h4>
+        <ul class="foot-links">
+          <li><a href="#privacy" data-i18n="nav.privacy">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copy">
+      <span>© <span id="year"></span> EasySales.</span>
+      <span class="muted" data-i18n="footer.rights">Все права защищены.</span>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
